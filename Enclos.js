@@ -7,10 +7,9 @@ class Enclos{
         }
         this._timers = []
         this._current = "";
-        this._btnAction = "";
-        this._manger = "";
-        this._dormir = "";
-        this._actions = "";
+        this._buttons = []
+        this._zone = ""
+        this._action = ""
 
     }
 
@@ -38,37 +37,30 @@ class Enclos{
         this._current = value;
     }
 
-    get btnAction() {
-        return this._btnAction;
+    get buttons() {
+        return this._buttons;
     }
 
-    set btnAction(value) {
-        this._btnAction = value;
+    set buttons(value) {
+        this._buttons = value;
+    }
+    
+    get zone() {
+        return this._zone;
     }
 
-    get manger() {
-        return this._manger;
+    set zone(value) {
+        this._zone = value;
+    }
+    
+    get action() {
+        return this._action;
     }
 
-    set manger(value) {
-        this._manger = value;
+    set action(value) {
+        this._action = value;
     }
 
-    get dormir() {
-        return this._dormir;
-    }
-
-    set dormir(value) {
-        this._dormir = value;
-    }
-
-    get actions() {
-        return this._actions;
-    }
-
-    set actions(value) {
-        this._actions = value;
-    }
 
     actionDormir(){
         this.currentTimer.sec = 20;

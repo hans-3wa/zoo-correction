@@ -1,9 +1,9 @@
-import SeaAnimal from "./SeaAnimal.js";
+import GroundAnimal from "./GroundAnimal.js";
 
-class Dauphin extends SeaAnimal {
+class Panda extends GroundAnimal {
     constructor(surnom, age, taille) {
         super(surnom, age, taille);
-        this._race = 'dauphin'
+        this._race = 'singe'
     }
 
     get race() {
@@ -14,12 +14,12 @@ class Dauphin extends SeaAnimal {
         this._race = value;
     }
 
-    siffle() {
-        return "les " + this._race + " sifflent"
+    gratter() {
+        return "les " + this._race + " se grattent"
     }
 
-    joue() {
-        return "les " + this._race + " jouent"
+    escalader() {
+        return "les " + this._race + " escaladent"
     }
 
     run() {
@@ -30,13 +30,13 @@ class Dauphin extends SeaAnimal {
         let random = Math.floor(Math.random() * 3)
         switch (random) {
             case 0 :
-                return this.siffle()
+                return this.gratter()
             case 1 :
-                return this.joue()
+                return this.escalader()
             case 2 :
                 return this.run()
         }
     }
 }
 
-export default Dauphin
+export default Panda

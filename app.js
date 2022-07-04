@@ -31,6 +31,7 @@ for(let i = 0; i < btnPanda.length; i++){
 enclosPanda.manger.addEventListener('click', (e) => {
     enclosPanda.current.innerHTML = 'Bon appetit'
     enclosPanda.actionManger()
+    
     manger(enclosPanda)
 
 })

@@ -4,6 +4,7 @@ class Panda extends GroundAnimal {
     constructor(surnom, age, taille) {
         super(surnom, age, taille);
         this._race = 'panda'
+        this.button = document.querySelector('.panda > button')
     }
 
     get race() {
