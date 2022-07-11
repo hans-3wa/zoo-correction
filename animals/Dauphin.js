@@ -1,4 +1,4 @@
-import SeaAnimal from "./SeaAnimal.js";
+import SeaAnimal from "../specimen/SeaAnimal.js";
 
 class Dauphin extends SeaAnimal {
     constructor(surnom, age, taille) {
@@ -22,20 +22,22 @@ class Dauphin extends SeaAnimal {
         return "les " + this._race + " jouent"
     }
 
-    run() {
-        return super.run(this._race);
-    }
 
     randomAction() {
         let random = Math.floor(Math.random() * 3)
+        console.log(random);
         switch (random) {
             case 0 :
                 return this.siffle()
             case 1 :
                 return this.joue()
             case 2 :
-                return this.run()
+                return super.nage(this._race);
         }
+    }
+    
+    getIdentity(){
+        return super.getIdentity(this._race);
     }
 }
 

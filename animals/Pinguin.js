@@ -1,4 +1,4 @@
-import GroundAnimal from "./GroundAnimal.js";
+import GroundAnimal from "../specimen/GroundAnimal.js";
 
 class Lion extends GroundAnimal {
     constructor(surnom, age, taille) {

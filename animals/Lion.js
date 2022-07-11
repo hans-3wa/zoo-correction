@@ -1,4 +1,4 @@
-import GroundAnimal from "./GroundAnimal.js";
+import GroundAnimal from "../specimen/GroundAnimal.js";
 
 class Lion extends GroundAnimal {
     constructor(surnom, age, taille) {
@@ -22,9 +22,6 @@ class Lion extends GroundAnimal {
         return "les " + this._race + " chassent"
     }
 
-    run() {
-        return super.run(this._race);
-    }
 
     randomAction() {
         let random = Math.floor(Math.random() * 3)
@@ -34,8 +31,12 @@ class Lion extends GroundAnimal {
             case 1 :
                 return this.chasse()
             case 2 :
-                return this.run()
+                return super.run(this._race);
         }
+    }
+    
+    getIdentity(){
+        return super.getIdentity(this._race);
     }
 }
 
