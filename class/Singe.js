@@ -1,9 +1,9 @@
-import GroundAnimal from "../specimen/GroundAnimal.js";
+import GroundAnimal from "./GroundAnimal.js";
 
 class Panda extends GroundAnimal {
     constructor(surnom, age, taille) {
         super(surnom, age, taille);
-        this._race = 'singe'
+        this.race = 'singe'
     }
 
     get race() {
@@ -28,6 +28,10 @@ class Panda extends GroundAnimal {
 
     randomAction() {
         let random = Math.floor(Math.random() * 3)
+        if (random === this.action) {
+            return this.randomAction()
+        }
+        this.action = random
         switch (random) {
             case 0 :
                 return this.gratter()
