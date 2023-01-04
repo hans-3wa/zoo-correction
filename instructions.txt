@@ -20,25 +20,25 @@ Le bouton Manger :
 Le bouton Dormir : 
     - Indique à la balise html <p> de : "current" que vos animaux sont en train de dormir.
     - Met en place un timer de 20sec sous chaque animal. 
-    - Les boutons Manger Dormir et Actions ne sont plus cliquable durant ce labs de temps. 
-    - Une fois le timer passé, la balise "current" indique que vos animaux sont prêt à recevoir une instruction.
+    - Les boutons Manger Dormir et Actions ne sont plus cliquables durant ce labs de temps.
+    - Une fois le timer passé, la balise "current" indique que vos animaux sont prêts à recevoir une instruction.
     
-Le bouton Actions : 
+Le bouton Actions :
     - Indique à la balise html <p> de : "current" une action random.
-    - Voici les actions possible pour vos animaux : 
-        - Panda : 
+    - Voici les actions possibles pour vos animaux :
+        - Panda :
             - grimper()
             - rouler()
-            - courir() 
-            
-        - Dauphins : 
+            - courir()
+
+        - Dauphins :
             - jouer()
             - siffler()
             - nager()
-            
-        - Lion : 
+
+        - Lion :
             - rugir()
             - chasser()
             - courir()
-    
-    - Tous les animaux : ont un surnom, un age & une taille !! 
+
+    - Tous les animaux : ont un surnom, un age & une taille ( Vous pouvez les afficher en HTML si vous le souhaitez )
